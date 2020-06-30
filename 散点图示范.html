@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="56258667d89146c794ed708d15416455" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="5a30395c3144496bbd3865404efa13a3" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_56258667d89146c794ed708d15416455 = echarts.init(
-            document.getElementById('56258667d89146c794ed708d15416455'), 'white', {renderer: 'canvas'});
-        var option_56258667d89146c794ed708d15416455 = {
+        var chart_5a30395c3144496bbd3865404efa13a3 = echarts.init(
+            document.getElementById('5a30395c3144496bbd3865404efa13a3'), 'white', {renderer: 'canvas'});
+        var option_5a30395c3144496bbd3865404efa13a3 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -188,15 +188,19 @@
     },
     "xAxis": [
         {
+            "name": "\u4f53\u91cd",
             "show": true,
             "scale": false,
             "nameLocation": "end",
-            "nameGap": 15,
+            "nameGap": 25,
             "gridIndex": 0,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
+            "min": 40,
+            "max": 90,
             "minInterval": 0,
+            "maxInterval": 10,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -212,15 +216,19 @@
     ],
     "yAxis": [
         {
+            "name": "\u8eab\u9ad8",
             "show": true,
             "scale": false,
             "nameLocation": "end",
-            "nameGap": 15,
+            "nameGap": 25,
             "gridIndex": 0,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
+            "min": 150,
+            "max": 180,
             "minInterval": 0,
+            "maxInterval": 5,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -239,9 +247,30 @@
             "padding": 5,
             "itemGap": 10
         }
-    ]
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 185,
+        "max": 145,
+        "inRange": {
+            "symbolSize": [
+                20,
+                50
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "dimension": 1,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
 };
-        chart_56258667d89146c794ed708d15416455.setOption(option_56258667d89146c794ed708d15416455);
+        chart_5a30395c3144496bbd3865404efa13a3.setOption(option_5a30395c3144496bbd3865404efa13a3);
     </script>
 </body>
 </html>

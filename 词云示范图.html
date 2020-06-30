@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-wordcloud.min.js"></script>
+
+</head>
+<body>
+    <div id="54bd3ae24f414034b01c4bf86adfc0fa" class="chart-container" style="width:600px; height:420px;"></div>
+    <script>
+        var chart_54bd3ae24f414034b01c4bf86adfc0fa = echarts.init(
+            document.getElementById('54bd3ae24f414034b01c4bf86adfc0fa'), 'white', {renderer: 'canvas'});
+        var option_54bd3ae24f414034b01c4bf86adfc0fa = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "wordCloud",
+            "name": "\u6570\u636e\u7b97\u6cd5\u5e38\u7528\u5de5\u5177",
+            "shape": "star",
+            "rotationRange": [
+                0,
+                0
+            ],
+            "rotationStep": 45,
+            "girdSize": 20,
+            "sizeRange": [
+                4,
+                20
+            ],
+            "data": [
+                {
+                    "name": "python",
+                    "value": 100,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(84,155,151)"
+                        }
+                    }
+                },
+                {
+                    "name": "jupyter",
+                    "value": 90,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(56,158,47)"
+                        }
+                    }
+                },
+                {
+                    "name": "numpy",
+                    "value": 65,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(160,84,102)"
+                        }
+                    }
+                },
+                {
+                    "name": "pandas",
+                    "value": 95,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(84,141,88)"
+                        }
+                    }
+                },
+                {
+                    "name": "matplotlib",
+                    "value": 50,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(57,0,70)"
+                        }
+                    }
+                },
+                {
+                    "name": "sklearn",
+                    "value": 60,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(158,74,160)"
+                        }
+                    }
+                },
+                {
+                    "name": "xgboost",
+                    "value": 70,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(22,154,43)"
+                        }
+                    }
+                },
+                {
+                    "name": "lightGBM",
+                    "value": 70,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(6,100,81)"
+                        }
+                    }
+                },
+                {
+                    "name": "simpy",
+                    "value": 20,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(6,127,59)"
+                        }
+                    }
+                },
+                {
+                    "name": "keras",
+                    "value": 70,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(34,64,72)"
+                        }
+                    }
+                },
+                {
+                    "name": "tensorflow",
+                    "value": 80,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(1,66,154)"
+                        }
+                    }
+                },
+                {
+                    "name": "hive",
+                    "value": 80,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(6,143,101)"
+                        }
+                    }
+                },
+                {
+                    "name": "hadoop",
+                    "value": 60,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(112,115,50)"
+                        }
+                    }
+                },
+                {
+                    "name": "spark",
+                    "value": 60,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(89,144,51)"
+                        }
+                    }
+                }
+            ],
+            "drawOutOfBound": false,
+            "textStyle": {
+                "emphasis": {}
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u6570\u636e\u7b97\u6cd5\u5e38\u7528\u5de5\u5177",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_54bd3ae24f414034b01c4bf86adfc0fa.setOption(option_54bd3ae24f414034b01c4bf86adfc0fa);
+    </script>
+</body>
+</html>
