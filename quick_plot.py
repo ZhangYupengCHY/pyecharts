@@ -18,17 +18,28 @@ from pyecharts.charts.basic_charts.scatter import Scatter
 from pyecharts import options as opts
 
 """
-快速了解pyecharts中的一些基本图形
-1.柱状图:Bar
-2.折线图:Line
-3.绘制散点图:scatter
-4.绘制箱线图:boxplot
-5.绘制词云:wordcloud
-6.绘制地理地图
-    6.城市:Geo
-    7.国家:Map
-    pyecharts中Geo表达和城市关联的数据,Map表达和国家和省份关联的数据。
-8.绘制饼图
+快速了解pyecharts:
+part A:常用基本图形
+    1.柱状图:Bar
+    2.折线图:Line
+    3.绘制散点图:scatter
+    4.绘制箱线图:boxplot
+    5.绘制词云:wordcloud
+    6.绘制地理地图
+        6.城市:Geo
+        7.国家:Map
+        pyecharts中Geo表达和城市关联的数据,Map表达和国家和省份关联的数据。
+    8.绘制饼图
+    还有一些图形:
+    日历图、漏斗图、仪表板、关系图、水球图、平行坐标系、极坐标系、雷达图、桑葚图、旭日图、主题河流图
+    
+part B:基本配置
+    1.初始化配置
+        init_opts = opts.InitOpts()
+    2.图形配置项
+        set_global_opts()
+        
+    
 """
 
 
@@ -260,6 +271,7 @@ def plot_geo_country():
 
     # 保存地图成html
     map.render('世界地图示范图.html')
+    map.render_embed()
 
 
 def plot_pie():
@@ -273,12 +285,11 @@ def plot_pie():
     data_sequence = [(name,value) for name,value in zip(attr,values)]
 
     # 初始化饼图
-    pie = Pie(init_opts=opts.InitOpts(width='400px',height='400px'))
+    pie = Pie(init_opts=opts.InitOpts(width='400px',height='400px',theme='wonderland'))
 
     # 添加数据
-    pie.add(series_name='销售比例',data_pair=data_sequence,label_opts=opts.LabelOpts(is_show=True))
-
-
+    pie.add(series_name='销售比例',data_pair=data_sequence,label_opts=opts.LabelOpts(is_show=True),center=['25%','50%'],radius=['30%','75%'])
+    pie.add(series_name='销售比例',data_pair=data_sequence,label_opts=opts.LabelOpts(is_show=True),center=['75%','50%'],radius=['30%','75%'])
 
     pie.render('饼图示范图.html')
 
