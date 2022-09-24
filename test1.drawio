@@ -1,1 +1,105 @@
-<mxfile host="app.diagrams.net" modified="2022-09-24T07:55:24.691Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="15.7.0" etag="LRzATWUdzTXsAcwpnTz0" type="github"><diagram id="NNu7Qqi8fQLkxbBvYigO">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-24T09:55:24.607Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="1jQuQAw_sfmCoXbhZz0S" version="15.7.0" type="github">
+  <diagram id="NNu7Qqi8fQLkxbBvYigO" name="Page-1">
+    <mxGraphModel dx="1038" dy="491" grid="0" gridSize="10" guides="0" tooltips="1" connect="0" arrows="0" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-33" value="sd可选" style="shape=umlFrame;fillColor=none;strokeColor=default;fontColor=#000000;rounded=0;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="370" width="630" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-32" value="1.3.4:返回用户签约信息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=default;fontColor=#000000;labelBackgroundColor=none;rounded=0;fontStyle=1;" edge="1" parent="1" source="yh_d9Q_ebxUex5tZDsZk-13" target="yh_d9Q_ebxUex5tZDsZk-15">
+          <mxGeometry x="0.0031" relative="1" as="geometry">
+            <mxPoint x="810" y="451" as="sourcePoint" />
+            <mxPoint x="340" y="451.3" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="430" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-1" value="用户" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#A8DADC;strokeColor=default;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="20" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-8" value="" style="whiteSpace=wrap;html=1;fillColor=#A8DADC;strokeColor=default;fontColor=#1D3557;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="85" y="110" width="10" height="1584" as="geometry" />
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-11" value="商户系统" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#A8DADC;strokeColor=default;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="298" y="40" width="80" height="1651" as="geometry" />
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#A8DADC;strokeColor=default;fontColor=#1D3557;rounded=0;" vertex="1" parent="yh_d9Q_ebxUex5tZDsZk-11">
+          <mxGeometry x="35" y="100" width="10" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-19" value="1.1：调用zhima.creadit.payafteruse.creditagreement.sign生成签名参数" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;strokeColor=default;fontColor=default;labelBackgroundColor=none;rounded=0;fontStyle=1;" edge="1" parent="yh_d9Q_ebxUex5tZDsZk-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="120" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="120" />
+              <mxPoint x="75" y="140" />
+              <mxPoint x="45" y="140" />
+            </Array>
+            <mxPoint x="45" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-20" value="1.2：将加签后的参数，拼接alipays" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;entryX=1.048;entryY=0.182;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;fontColor=#000000;labelBackgroundColor=none;rounded=0;fontStyle=1;" edge="1" parent="yh_d9Q_ebxUex5tZDsZk-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="160" />
+              <mxPoint x="75" y="180" />
+            </Array>
+            <mxPoint x="45.48000000000002" y="180.03999999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-13" value="支付宝系统" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#A8DADC;strokeColor=default;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="40" width="80" height="1650" as="geometry" />
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#A8DADC;strokeColor=default;fontColor=#1D3557;rounded=0;" vertex="1" parent="yh_d9Q_ebxUex5tZDsZk-13">
+          <mxGeometry x="35" y="220" width="10" height="240" as="geometry" />
+        </mxCell>
+        <object label="1.信用服务开通" placeholders="1" id="yh_d9Q_ebxUex5tZDsZk-14">
+          <mxCell style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.06;exitY=0.019;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.045;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;fontColor=#000000;labelBackgroundColor=none;rounded=0;fontStyle=1;" edge="1" parent="1">
+            <mxGeometry width="80" relative="1" as="geometry">
+              <mxPoint x="95.6" y="140.096" as="sourcePoint" />
+              <mxPoint x="332.55" y="140" as="targetPoint" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-25" value="1.3：通过scheme协议唤起支付宝APP" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=default;fontColor=#000000;labelBackgroundColor=none;rounded=0;fontStyle=1;" edge="1" parent="1" source="yh_d9Q_ebxUex5tZDsZk-15">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="350" y="260" as="sourcePoint" />
+            <mxPoint x="816" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-28" value="1.3.1：服务开通状态变更通知zhima.credit.payafteruse.creditagreement,changed" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.984;entryY=0.543;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;fontColor=#000000;labelBackgroundColor=none;rounded=0;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="815" y="312" as="sourcePoint" />
+            <mxPoint x="342.8399999999999" y="312.05000000000007" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="705" y="312" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-30" value="1.3.2:success" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=default;fontColor=#000000;labelBackgroundColor=none;rounded=0;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry x="0.0031" relative="1" as="geometry">
+            <mxPoint x="343" y="340" as="sourcePoint" />
+            <mxPoint x="818" y="340" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yh_d9Q_ebxUex5tZDsZk-31" value="1.3.3：查询服务开通信息zhima.credit.payaftreruse.crediragreement.query" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.001;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;fontColor=#000000;labelBackgroundColor=none;rounded=0;fontStyle=1;" edge="1" parent="1" source="yh_d9Q_ebxUex5tZDsZk-15">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="344" y="410" as="sourcePoint" />
+            <mxPoint x="815.1599999999997" y="410.19000000000005" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420.17" y="410.65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
